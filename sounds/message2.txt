@@ -256,5 +256,5 @@ img.logo {
 
 .hidden {
   visibility: hidden;
-  opacity: 0;
+  opacity:0;
 }

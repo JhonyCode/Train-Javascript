@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra Papel Tijeras</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Rubik&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <img
-      class="logo"
-      src="img/logo.png"
-      alt="Logotipo de Piedra Papel Tijeras"
-    />
+    <!-- The Modal -->
+    <div class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Rock, paper, scissors</p>
+        <button>Let's play!</button>
+      </div>
+    </div>
+    <img class="logo" src="img/logo.png" alt="" />
     <section class="scoreboard">
       <div class="row top">
         <span>Jugador</span>
@@ -29,21 +27,33 @@
         <div>00</div>
         <div>
           <span>RONDA</span>
-          <div class="round">8</div>
+          <div class="round">0</div>
         </div>
-        <div>88</div>
+        <div>00</div>
       </div>
     </section>
-    <section class="display">Piedra gana a tijeras -- piedra</section>
+    <section class="display">Welcome to this fabulous game!!</section>
     <section class="results">
-      <div><img src="img/big-rock.png" alt="" /></div>
-      <div><img src="img/big-scissors.png" alt="" /></div>
+      <div>
+        <img src="img/big-rock.png" alt="" />
+        <div></div>
+      </div>
+      <div>
+        <img src="img/big-scissors.png" alt="" />
+        <div></div>
+      </div>
     </section>
     <section class="play">
       <span>PULSA</span>
-      <div><img src="img/small-rock.png" alt="" /></div>
-      <div><img src="img/small-paper.png" alt="" /></div>
-      <div><img src="img/small-scissors.png" alt="" /></div>
+      <div data-option="0">
+        <img src="img/small-rock.png" alt="rock choice" />
+      </div>
+      <div data-option="1">
+        <img src="img/small-paper.png" alt="paper choice" />
+      </div>
+      <div data-option="2">
+        <img src="img/small-scissors.png" alt="scissors choice" />
+      </div>
     </section>
     <script src="js/app.js"></script>
   </body>
